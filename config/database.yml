@@ -1,0 +1,25 @@
+
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: hamilton_development
+  username: postgres
+  password: postgres
+  host: localhost
+  pool: 5
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: hamilton_test
+  pool: 5
+  username: postgres
+  password: postgres
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: hamilton_production
+  pool: 5
+  username: postgres
+  password: postgres

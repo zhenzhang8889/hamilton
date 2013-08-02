@@ -1,0 +1,265 @@
+%script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.js", :type => "text/javascript"}
+#body
+  %img.header{:src => "/assets/back.jpg"}
+  .logo
+    %a{:href => "/"}
+      %img{:src => "/assets/logo.jpg"}
+  
+  .serach_box
+    = form_tag :remote => true, :method => 'get', :id => "sending_frm" do
+      %input{:type => 'text', :name => 'subject', :placeholder => 'Location', :class =>"location"}
+      %input{:type => 'text', :name => 'subject', :placeholder => 'From', :class =>"price_from"}
+      %input{:type => 'text', :name => 'subject', :placeholder => 'To', :class =>"price_to"}
+      
+      .send_relation
+        =submit_tag "View Homes", class: "btn btn-warning btn-large", id: "sendbutton"
+        
+%ul#jsddm
+  %li
+    %a{:href => "#"} Home
+    
+  %li
+    %a{:href => "#"} Residential
+    %ul
+      %li
+        %a{:href => "#"} Cape Coral
+      %li
+        %a{:href => "#"} Fort Myers
+      %li
+        %a{:href => "#"} Pine Island
+      %li
+        %a{:href => "#"} Lehigh Acres
+      %li
+        %a{:href => "#"} North Fort Myers
+      %li
+        %a{:href => "#"} Fort Myers Beach
+      %li
+        %a{:href => "#"} Bonita Springs
+      %li
+        %a{:href => "#"} Estero
+      %li
+        %a{:href => "#"} Sanibel Island
+      %li
+        %a{:href => "#"} Captiva Island
+      %li
+        %a{:href => "#"} Lee County Seller Financed
+  %li
+    %a{:href => "#"} Commercial
+    %ul
+      %li
+        %a{:href => "#"} Cape Coral
+      %li
+        %a{:href => "#"} Fort Myers
+      %li
+        %a{:href => "#"} All Commercial
+      %li
+        %a{:href => "#"} Seller Finance Commercial
+      %li
+        %a{:href => "#"} Property Management
+  %li
+    %a{:href => "#"} Investments
+    %ul
+      %li
+        %a{:href => "#"} Residential
+      %li
+        %a{:href => "#"} Commercial
+      %li
+        %a{:href => "#"} Property Management
+  %li
+    %a{:href => "#"} Finance
+    %ul
+      %li
+        %a{:href => "#"} Apply For A Loan Online
+      %li
+        %a{:href => "#"} What To Know About Home Loans
+      %li
+        %a{:href => "#"} Seller Financing
+           
+  %li
+    %a{:href => "#"} Contact Us
+  %li
+    %a{:href => "#"} Careers
+    %ul
+      %li
+        %a{:href => "#"} The Hamilton-Franklin Difference
+      %li
+        %a{:href => "#"} Steps To Becoming Licensed
+  %li
+    %a{:href => "#"} Agent Login
+  %li
+    %a{:href => "#"} Help
+#show.slideshow{:style => "position:absolute"}
+  .slideshow-images{:style => "display: none;"}
+    %a{:href => "#"}
+      %img#slide-0{:alt => "201103493", :src => "/assets/data/images/201103493.jpg", :title => "201103493"}
+    %a{:href => "#"}
+      %img#slide-1{:alt => "201123561", :src => "/assets/data/images/201123561.jpg", :title => "201123561"}
+    %a{:href => "#"}
+      %img#slide-2{:alt => "201129570", :src => "/assets/data/images/201129570.jpg", :title => "201129570"}
+    %a{:href => "#"}
+      %img#slide-3{:alt => "201136831", :src => "/assets/data/images/201136831.jpg", :title => "201136831"}
+    %a{:href => "#"}
+      %img#slide-4{:alt => "201212805", :src => "/assets/data/images/201212805.jpg", :title => "201212805"}
+    %a{:href => "#"}
+      %img#slide-5{:alt => "201229615", :src => "/assets/data/images/201229615.jpg", :title => "201229615"}
+    %a{:href => "#"}
+      %img#slide-6{:alt => "201232397", :src => "/assets/data/images/201232397.jpg", :title => "201232397"}
+    %a{:href => "#"}
+      %img#slide-7{:alt => "201235105", :src => "/assets/data/images/201235105.jpg", :title => "201235105"}
+    %a{:href => "#"}
+      %img#slide-8{:alt => "201235608", :src => "/assets/data/images/201235608.jpg", :title => "201235608"}
+    %a{:href => "#"}
+      %img#slide-9{:alt => "201236905", :src => "/assets/data/images/201236905.jpg", :title => "201236905"}
+    %a{:href => "#"}
+      %img#slide-10{:alt => "201236911", :src => "/assets/data/images/201236911.jpg", :title => "201236911"}
+    %a{:href => "#"}
+      %img#slide-11{:alt => "201237364", :src => "/assets/data/images/201237364.jpg", :title => "201237364"}
+    %a{:href => "#"}
+      %img#slide-12{:alt => "201240147", :src => "/assets/data/images/201240147.jpg", :title => "201240147"}
+    %a{:href => "#"}
+      %img#slide-13{:alt => "201243387", :src => "/assets/data/images/201243387.jpg", :title => "201243387"}
+    %a{:href => "#"}
+      %img#slide-14{:alt => "201243670", :src => "/assets/data/images/201243670.jpg", :title => "201243670"}
+    %a{:href => "#"}
+      %img#slide-15{:alt => "201302734", :src => "/assets/data/images/201302734.jpg", :title => "201302734"}
+    %a{:href => "#"}
+      %img#slide-16{:alt => "201303982", :src => "/assets/data/images/201303982.jpg", :title => "201303982"}
+    %a{:href => "#"}
+      %img#slide-17{:alt => "201308664", :src => "/assets/data/images/201308664.jpg", :title => "201308664"}
+    %a{:href => "#"}
+      %img#slide-18{:alt => "201311187", :src => "/assets/data/images/201311187.jpg", :title => "201311187"}
+    %a{:href => "#"}
+      %img#slide-19{:alt => "201312654", :src => "/assets/data/images/201312654.jpg", :title => "201312654"}
+    %a{:href => "#"}
+      %img#slide-20{:alt => "fiddlesticks_150", :src => "/assets/data/images/fiddlesticks_150.jpg", :title => "fiddlesticks_150"}
+    %a{:href => "#"}
+      %img#slide-21{:alt => "gulf_harbour_marina_150", :src => "/assets/data/images/gulf_harbour_marina_150.jpg", :title => "gulf_harbour_marina_150"}
+    %a{:href => "#"}
+      %img#slide-22{:alt => "mastique_pool_150", :src => "/assets/data/images/mastique_pool_150.jpg", :title => "mastique_pool_150"}
+    %a{:href => "#"}
+      %img#slide-23{:alt => "slidehouse", :src => "/assets/data/images/slidehouse.jpg", :title => "slidehouse"}
+    %a{:href => "#"}
+      %img#slide-24{:alt => "201123561", :src => "/assets/data/images/201123561_0.jpg", :title => "201123561"}
+    %a{:href => "#"}
+      %img#slide-25{:alt => "201123561_01", :src => "/assets/data/images/201123561_01.jpg", :title => "201123561_01"}
+    %a{:href => "#"}
+      %img#slide-26{:alt => "201123561_02", :src => "/assets/data/images/201123561_02.jpg", :title => "201123561_02"}
+    %a{:href => "#"}
+      %img#slide-27{:alt => "201123561_03", :src => "/assets/data/images/201123561_03.jpg", :title => "201123561_03"}
+    %a{:href => "#"}
+      %img#slide-28{:alt => "201123561_04", :src => "/assets/data/images/201123561_04.jpg", :title => "201123561_04"}
+    %a{:href => "#"}
+      %img#slide-29{:alt => "201123561_05", :src => "/assets/data/images/201123561_05.jpg", :title => "201123561_05"}
+    %a{:href => "#"}
+      %img#slide-30{:alt => "201123561_06", :src => "/assets/data/images/201123561_06.jpg", :title => "201123561_06"}
+    %a{:href => "#"}
+      %img#slide-31{:alt => "201123561_07", :src => "/assets/data/images/201123561_07.jpg", :title => "201123561_07"}
+    %a{:href => "#"}
+      %img#slide-32{:alt => "201123561_08", :src => "/assets/data/images/201123561_08.jpg", :title => "201123561_08"}
+    %a{:href => "#"}
+      %img#slide-33{:alt => "201123561_09", :src => "/assets/data/images/201123561_09.jpg", :title => "201123561_09"}
+  .slideshow-thumbnails
+    %ul
+      %li
+        %a{:href => "#slide-0"}
+          %img{:alt => "201103493", :src => "/assets/data/thumbnails/201103493.jpg"}
+      %li
+        %a{:href => "#slide-1"}
+          %img{:alt => "201123561", :src => "/assets/data/thumbnails/201123561.jpg"}
+      %li
+        %a{:href => "#slide-2"}
+          %img{:alt => "201129570", :src => "/assets/data/thumbnails/201129570.jpg"}
+      %li
+        %a{:href => "#slide-3"}
+          %img{:alt => "201136831", :src => "/assets/data/thumbnails/201136831.jpg"}
+      %li
+        %a{:href => "#slide-4"}
+          %img{:alt => "201212805", :src => "/assets/data/thumbnails/201212805.jpg"}
+      %li
+        %a{:href => "#slide-5"}
+          %img{:alt => "201229615", :src => "/assets/data/thumbnails/201229615.jpg"}
+      %li
+        %a{:href => "#slide-6"}
+          %img{:alt => "201232397", :src => "/assets/data/thumbnails/201232397.jpg"}
+      %li
+        %a{:href => "#slide-7"}
+          %img{:alt => "201235105", :src => "/assets/data/thumbnails/201235105.jpg"}
+      %li
+        %a{:href => "#slide-8"}
+          %img{:alt => "201235608", :src => "/assets/data/thumbnails/201235608.jpg"}
+      %li
+        %a{:href => "#slide-9"}
+          %img{:alt => "201236905", :src => "/assets/data/thumbnails/201236905.jpg"}
+      %li
+        %a{:href => "#slide-10"}
+          %img{:alt => "201236911", :src => "/assets/data/thumbnails/201236911.jpg"}
+      %li
+        %a{:href => "#slide-11"}
+          %img{:alt => "201237364", :src => "/assets/data/thumbnails/201237364.jpg"}
+      %li
+        %a{:href => "#slide-12"}
+          %img{:alt => "201240147", :src => "/assets/data/thumbnails/201240147.jpg"}
+      %li
+        %a{:href => "#slide-13"}
+          %img{:alt => "201243387", :src => "/assets/data/thumbnails/201243387.jpg"}
+      %li
+        %a{:href => "#slide-14"}
+          %img{:alt => "201243670", :src => "/assets/data/thumbnails/201243670.jpg"}
+      %li
+        %a{:href => "#slide-15"}
+          %img{:alt => "201302734", :src => "/assets/data/thumbnails/201302734.jpg"}
+      %li
+        %a{:href => "#slide-16"}
+          %img{:alt => "201303982", :src => "/assets/data/thumbnails/201303982.jpg"}
+      %li
+        %a{:href => "#slide-17"}
+          %img{:alt => "201308664", :src => "/assets/data/thumbnails/201308664.jpg"}
+      %li
+        %a{:href => "#slide-18"}
+          %img{:alt => "201311187", :src => "/assets/data/thumbnails/201311187.jpg"}
+      %li
+        %a{:href => "#slide-19"}
+          %img{:alt => "201312654", :src => "/assets/data/thumbnails/201312654.jpg"}
+      %li
+        %a{:href => "#slide-20"}
+          %img{:alt => "fiddlesticks_150", :src => "/assets/data/thumbnails/fiddlesticks_150.jpg"}
+      %li
+        %a{:href => "#slide-21"}
+          %img{:alt => "gulf_harbour_marina_150", :src => "/assets/data/thumbnails/gulf_harbour_marina_150.jpg"}
+      %li
+        %a{:href => "#slide-22"}
+          %img{:alt => "mastique_pool_150", :src => "/assets/data/thumbnails/mastique_pool_150.jpg"}
+      %li
+        %a{:href => "#slide-23"}
+          %img{:alt => "slidehouse", :src => "/assets/data/thumbnails/slidehouse.jpg"}
+      %li
+        %a{:href => "#slide-24"}
+          %img{:alt => "201123561", :src => "/assets/data/thumbnails/201123561_0.jpg"}
+      %li
+        %a{:href => "#slide-25"}
+          %img{:alt => "201123561_01", :src => "/assets/data/thumbnails/201123561_01.jpg"}
+      %li
+        %a{:href => "#slide-26"}
+          %img{:alt => "201123561_02", :src => "/assets/data/thumbnails/201123561_02.jpg"}
+      %li
+        %a{:href => "#slide-27"}
+          %img{:alt => "201123561_03", :src => "/assets/data/thumbnails/201123561_03.jpg"}
+      %li
+        %a{:href => "#slide-28"}
+          %img{:alt => "201123561_04", :src => "/assets/data/thumbnails/201123561_04.jpg"}
+      %li
+        %a{:href => "#slide-29"}
+          %img{:alt => "201123561_05", :src => "/assets/data/thumbnails/201123561_05.jpg"}
+      %li
+        %a{:href => "#slide-30"}
+          %img{:alt => "201123561_06", :src => "/assets/data/thumbnails/201123561_06.jpg"}
+      %li
+        %a{:href => "#slide-31"}
+          %img{:alt => "201123561_07", :src => "/assets/data/thumbnails/201123561_07.jpg"}
+      %li
+        %a{:href => "#slide-32"}
+          %img{:alt => "201123561_08", :src => "/assets/data/thumbnails/201123561_08.jpg"}
+      %li
+        %a{:href => "#slide-33"}
+          %img{:alt => "201123561_09", :src => "/assets/data/thumbnails/201123561_09.jpg"}
+
